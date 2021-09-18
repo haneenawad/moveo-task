@@ -107,11 +107,21 @@ function App() {
         <div id="playStop">
           {/* --------------------------PLAY-------------------------------------- */}
           <div id="play">
-            <img id="icon" src={iconPlay} onClick={() => playAudios()} />
+            <img
+              id="icon"
+              src={iconPlay}
+              alt="play"
+              onClick={() => playAudios()}
+            />
           </div>
           {/* -------------------------------STOP-------------------------------------- */}
           <div id="stop">
-            <img id="icon" src={iconStop} onClick={() => stopAudios()} />
+            <img
+              id="icon"
+              src={iconStop}
+              alt="stop"
+              onClick={() => stopAudios()}
+            />
           </div>
         </div>
         {/* ---------------------------All Audios------------------------------------- */}
@@ -122,7 +132,7 @@ function App() {
               id="audio-button"
               onClick={() => getAudio(sound[0], sound[1], sound[2])}
             >
-              <img id="icon" src={iconBtn} />
+              <img id="icon" src={iconBtn} alt="audio" />
               {sound[3]}
             </button>
           </div>
